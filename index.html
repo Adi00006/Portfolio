@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Adinath Sonawane – Data Analyst Portfolio</title>
+<meta name="description" content="Portfolio of Adinath Sonawane, showcasing data analytics, data science, cybersecurity projects, skills, and experience.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -17,6 +18,8 @@ body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.65 "Public S
 h1,h2,h3{font-family:"Bricolage Grotesque",Georgia,sans-serif;line-height:1.15;margin:0;letter-spacing:-.01em}
 a{color:var(--accent)}
 :focus-visible{outline:3px solid var(--warm);outline-offset:2px;border-radius:4px}
+.skip{position:absolute;top:-100px;left:12px;z-index:11;background:var(--surface);color:var(--ink);padding:10px 14px;border:1px solid var(--line);border-radius:8px}
+.skip:focus{top:12px}
 .wrap{max-width:1040px;margin:0 auto;padding:0 22px}
 body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--bg);z-index:10}
 header{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
@@ -60,7 +63,7 @@ section>.wrap>h2{font-size:clamp(1.7rem,3.6vw,2.3rem);margin-bottom:8px}
 .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
 .chip{border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:6px 14px;border-radius:99px;cursor:pointer;font:500 14px "Public Sans",sans-serif}
 .chip[aria-pressed="true"]{background:var(--accent);color:var(--bg);border-color:var(--accent)}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:12px}
 .card[hidden]{display:none}
 .card h3{font-size:1.15rem}
@@ -68,7 +71,7 @@ section>.wrap>h2{font-size:clamp(1.7rem,3.6vw,2.3rem);margin-bottom:8px}
 .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto}
 .tags span{background:var(--accent-soft);color:var(--accent);border-radius:6px;padding:2px 9px;font-size:13px;font-weight:500}
 .card.big{grid-column:1/-1;border-color:var(--accent)}
-.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.sk{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:18px}
 .sk .card{gap:10px}
 .cert{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
 .cert div{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-weight:500;font-size:15px}
@@ -90,6 +93,7 @@ details{border-top:1px solid var(--line);padding-top:10px}summary{cursor:pointer
 </style>
 </head>
 <body>
+<a class="skip" href="#top">Skip to content</a>
 <header><div class="wrap"><nav>
 <a class="brand" href="#top">Adinath Sonawane</a>
 <a class="l" href="#about">About</a><a class="l" href="#process">How I work</a><a class="l" href="#experience">Experience</a><a class="l" href="#projects">Projects</a><a class="l" href="#skills">Skills</a><a class="l" href="#education">Education</a><a class="l" href="#contact">Contact</a>
@@ -128,12 +132,12 @@ details{border-top:1px solid var(--line);padding-top:10px}summary{cursor:pointer
 <div>
 <p>I am a final-year Computer Engineering student who enjoys the full path from raw data to a decision. I clean and validate data first, so the numbers can be trusted. Then I explore it for patterns and trends, and present what I find in dashboards and plain language.</p>
 <p>My projects range from business analytics, such as user engagement and cloud cost, to machine learning for network security. My background in cybersecurity gives me a useful angle on data quality, monitoring and risk.</p>
-<p>On the security side, I have hands-on experience in ethical hacking, vulnerability assessment and SIEM deployment. That includes web application security testing, Linux administration and cloud platforms (Amazon EC2). I am good at identifying, analysing and mitigating security threats.</p>
-<p>I am looking for a data analyst, data science or security-focused role where I can keep learning on real problems.</p>
+<p>On the security side, I have hands-on experience in ethical hacking, vulnerability assessment, and SIEM deployment. That includes web application security testing, Linux administration, and cloud platforms such as Amazon EC2. I use careful analysis to identify security threats and communicate mitigation steps.</p>
+<p>I am looking for a data analyst, data scientist, or security-focused role where I can keep learning through real-world problems.</p>
 </div>
 <div class="facts"><dl>
 <dt>Location</dt><dd>Nashik, Maharashtra, India</dd>
-<dt>Availability</dt><dd>Open to remote and relocation</dd>
+<dt>Availability</dt><dd>Open to remote work and relocation</dd>
 <dt>Focus</dt><dd>Data analysis, dashboards, classification models</dd>
 <dt>Working style</dt><dd>Clear communication, analytical thinking, problem-solving, documentation</dd>
 </dl></div>
@@ -156,7 +160,7 @@ details{border-top:1px solid var(--line);padding-top:10px}summary{cursor:pointer
 <div class="job"><h3>Data Analyst Intern</h3><div class="when">NextLevel Computech-Solutions, Nashik · Jan 2026 – Mar 2026</div>
 <ul><li>Cleaned and checked raw datasets with SQL and Excel so the numbers could be trusted before analysis.</li>
 <li>Explored the data to spot patterns, trends and key business metrics, and explained the findings to non-technical stakeholders to support decisions.</li>
-<li>Built Power BI dashboards that track KPIs, trends and performance for regular reporting.</li></ul>
+<li>Built Power BI dashboards to track KPIs, trends, and performance for regular reporting.</li></ul>
 <div class="tags jt"><span>SQL</span><span>Excel</span><span>Power BI</span><span>Data cleaning</span><span>KPI reporting</span></div></div>
 <div class="job"><h3>Ethical Hacking and Cyber Security Intern</h3><div class="when">Data Crush Analytics, Nashik · Apr 2025 – Jul 2025</div>
 <ul><li>Implemented and monitored SIEM tools (Wazuh, Grafana) for threat detection and response, reducing average incident response time by 30%.</li>
@@ -168,6 +172,7 @@ details{border-top:1px solid var(--line);padding-top:10px}summary{cursor:pointer
 <section id="projects"><div class="wrap">
 <h2>Projects</h2>
 <p class="sub">Filter by the main tool used.</p>
+<p class="sub" id="project-count" aria-live="polite" aria-atomic="true">Showing all 8 projects.</p>
 <div class="chips" role="group" aria-label="Filter projects">
 <button class="chip" type="button" data-f="all" aria-pressed="true">All</button>
 <button class="chip" type="button" data-f="sql" aria-pressed="false">SQL</button>
@@ -281,10 +286,16 @@ details{border-top:1px solid var(--line);padding-top:10px}summary{cursor:pointer
 <script>
 (function(){
 var cards=document.querySelectorAll('.card[data-t]'),chips=document.querySelectorAll('.chip');
+var projectCount=document.getElementById('project-count');
 chips.forEach(function(c){c.addEventListener('click',function(){
 var f=c.getAttribute('data-f');
 chips.forEach(function(x){x.setAttribute('aria-pressed',x===c?'true':'false')});
-cards.forEach(function(k){k.hidden=!(f==='all'||k.getAttribute('data-t').split(' ').indexOf(f)>-1)});
+var visible=0;
+cards.forEach(function(k){
+k.hidden=!(f==='all'||k.getAttribute('data-t').split(' ').indexOf(f)>-1);
+if(!k.hidden)visible++;
+});
+projectCount.textContent=f==='all'?'Showing all '+visible+' projects.':'Showing '+visible+' projects matching '+c.textContent+'.';
 })});
 var r=document.documentElement,tg=document.getElementById('tg');
 tg.addEventListener('click',function(){
